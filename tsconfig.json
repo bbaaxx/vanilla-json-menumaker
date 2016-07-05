@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "js"
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "exclude": [
+        "node_modules",
+        ".tmp"
+    ],
+    "files": [
+        "index.ts",
+        "libs/ConfigurationService.ts",
+        "libs/MenuItem.ts",
+        "libs/MenuMaker.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

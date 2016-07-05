@@ -1,0 +1,20 @@
+{
+  "name": "menumaker-json",
+  "version": "0.1.0",
+  "description": "Menu maker reads a JSON file, written in TS compiles to vanilla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "dev": "lite-server",
+    "typescript": "tsc -p ."
+  },
+  "author": "Eduardo Mosqueda (emposquedach@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "systemjs": "^0.19.31"
+  }
+}
