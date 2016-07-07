@@ -8,17 +8,35 @@
     "filesGlob": [
         "**/*.ts",
         "**/*.tsx",
-        "!node_modules/**"
+        "!node_modules/**",
+        "!configure-system.ts"
     ],
     "exclude": [
         "node_modules",
         ".tmp"
     ],
     "files": [
+        "app/ConfigurationService.spec.ts",
+        "app/ConfigurationService.ts",
+        "app/HttpService.spec.ts",
+        "app/HttpService.ts",
+        "app/initialize.spec.ts",
+        "app/initialize.ts",
+        "app/MenuItem.spec.ts",
+        "app/MenuItem.ts",
+        "app/MenuMaker.spec.ts",
+        "app/MenuMaker.ts",
         "index.ts",
-        "libs/ConfigurationService.ts",
-        "libs/MenuItem.ts",
-        "libs/MenuMaker.ts"
+        "typings/globals/jquery/index.d.ts",
+        "typings/globals/jsdom/index.d.ts",
+        "typings/globals/mocha/index.d.ts",
+        "typings/globals/node/index.d.ts",
+        "typings/globals/q/index.d.ts",
+        "typings/index.d.ts",
+        "typings/modules/bluebird/index.d.ts",
+        "typings/modules/chai/index.d.ts",
+        "typings/modules/sinon-chai/index.d.ts",
+        "typings/modules/sinon/index.d.ts"
     ],
     "atom": {
         "rewriteTsconfig": true

@@ -1,5 +1,4 @@
-import { MenuMaker } from './libs/MenuMaker';
+import initializeMenumaker from './app/initialize';
+export { initializeMenumaker as menuMakerInstance };
 
-let targetElement = document.getElementById('menumaker');
-
-// let mm = new MenuMaker(targetElement, );
+initializeMenumaker();

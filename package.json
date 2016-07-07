@@ -4,17 +4,27 @@
   "description": "Menu maker reads a JSON file, written in TS compiles to vanilla.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "dev": "lite-server",
-    "typescript": "tsc -p ."
+    "test": "mocha -c js/**/*.spec.js",
+    "dev": "tsc -p . && lite-server",
+    "typescript": "tsc -p .",
+    "build": "browserify --debug -e js/index.js -o dist/menumaker-json.js",
+    "minify": "uglifyjs dist/menumaker-json.js -o dist/menumaker-json.min.js"
   },
-  "author": "Eduardo Mosqueda (emposquedach@gmail.com)",
+  "author": "Eduardo Mosqueda (bbaaxx@gmail.com)",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "foundation-apps": "^1.2.0",
+    "jsdom": "^9.4.1",
     "lite-server": "^2.2.2",
-    "typescript": "^1.8.10"
-  },
-  "dependencies": {
-    "systemjs": "^0.19.31"
+    "mocha": "^2.5.3",
+    "q": "^1.4.1",
+    "requirejs": "^2.2.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "systemjs": "^0.19.31",
+    "typescript": "^1.8.10",
+    "uglify-js": "^2.7.0"
   }
 }

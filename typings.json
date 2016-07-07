@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bluebird": "registry:npm/bluebird#3.3.4+20160622205516",
+    "chai": "registry:npm/chai#3.5.0+20160415060238",
+    "sinon": "registry:npm/sinon#1.16.0+20160427193336",
+    "sinon-chai": "registry:npm/sinon-chai#2.8.0+20160310030142"
+  },
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "jsdom": "registry:dt/jsdom#2.0.0+20160316155526",
+    "mocha": "registry:dt/mocha#2.2.5+20160619032855",
+    "node": "registry:dt/node#6.0.0+20160621231320",
+    "q": "registry:dt/q#0.0.0+20160613154756"
+  }
+}

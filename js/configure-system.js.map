@@ -1,0 +1,1 @@
+{"version":3,"file":"configure-system.js","sourceRoot":"","sources":["../configure-system.ts"],"names":[],"mappings":"AACA,QAAQ,CAAC,MAAM,CAAC;IACd,QAAQ,EAAE;QACR,IAAI,EAAE;YACJ,IAAI,EAAE,UAAU;YAChB,GAAG,EAAE;gBACH,UAAU,EAAE,8CAA8C;gBAC1D,GAAG,EAAE,qBAAqB;aAC3B;SACF;KACF;CACF,CAAC,CAAC"}

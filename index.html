@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>JSON MenuMaker Demo</title>
   <script src="node_modules/systemjs/dist/system.js"></script>
+  <link rel="stylesheet" href="node_modules/foundation-apps/dist/css/foundation-apps.min.css">
 </head>
 <body>
 
   <header>
-    <nav><ul id="menumaker"></ul></nav>
+    <nav>
+      <ul id="primary-nav" data-menu-list="primaryNav" class="menu-maker dark menu-bar condense medium-expand"></ul>
+    </nav>
+    <nav>
+      <ul id="sub-nav" data-menu-list="subNav" data-menu-dynamic="true" class="menu-maker primary menu-bar condense medium-expand"></ul>
+    </nav>
   </header>
 
+  <div id="menu-maker-config" data-menu-config="data/cmf-config.json"></div>
+  <script src="configure-system.js"></script>
   <script>
-    // set our baseURL reference path
-    SystemJS.config({
-      packages: {
-        'js': {
-          main: 'index.js'
-        }
-      }
-    });
-
-    // loads /js/main.js
     SystemJS.import('js/index.js');
   </script>
 </body>

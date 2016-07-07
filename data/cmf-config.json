@@ -1,0 +1,141 @@
+{
+    "menus": {
+        "primaryNav": [{
+            "id": "itemOne",
+            "index": 1
+        }, {
+            "id": "itemTwo",
+            "index": 2
+        }, {
+            "id": "itemThree",
+            "index": 3
+        }, {
+            "id": "itemFour",
+            "index": 4
+        }, {
+            "id": "itemFive",
+            "index": 5
+        }, {
+            "id": "flyout",
+            "index": 6
+        }, {
+            "id": "itemSeven",
+            "index": 7
+        }],
+        "itemOne": [{
+            "id": "otherItemOne",
+            "index": 1
+        }, {
+            "id": "otherItemTwo",
+            "index": 2
+        }, {
+            "id": "otherItemThree",
+            "index": 3
+        }],
+        "itemTwo": [{
+            "id": "yetAnotherItemOne",
+            "index": 1
+        }, {
+            "id": "yetAnotherItemTwo",
+            "index": 2
+        }, {
+            "id": "yetAnotherItemThree",
+            "index": 3
+        }, {
+            "id": "yetAnotherItemFour",
+            "index": 4
+        }]
+    },
+    "menuItemDefinitions": {
+        "itemOne": {
+            "index": 1,
+            "name": "Item One",
+            "href": "/itemOne",
+            "subNav": "itemOne"
+        },
+        "itemTwo": {
+            "index": 2,
+            "name": "Item Two",
+            "href": "/itemTwo",
+            "subNav": "itemTwo"
+        },
+        "itemThree": {
+            "index": 3,
+            "name": "Item Three",
+            "href": "/itemThree"
+        },
+        "itemFour": {
+            "index": 4,
+            "name": "Item Four",
+            "href": "/itemFour"
+        },
+        "itemFive": {
+            "index": 5,
+            "name": "Item Five",
+            "href": "/itemFive"
+        },
+        "flyout": {
+            "index": 6,
+            "name": "Flyout",
+            "href": "#",
+            "hasFlyout": true,
+            "subMenu": {
+                "item1": {
+                    "index": 1,
+                    "name": "Item 1",
+                    "href": "#"
+                },
+                "item2": {
+                    "index": 2,
+                    "name": "Item 2",
+                    "href": "#"
+                },
+                "item3": {
+                    "index": 3,
+                    "name": "Item 3",
+                    "href": "#"
+                }
+            }
+        },
+        "itemSeven": {
+            "index": 7,
+            "name": "Item Seven",
+            "href": "/itemSeven"
+        },
+        "otherItemOne": {
+            "index": 1,
+            "name": "Other Item One",
+            "href": "#"
+        },
+        "otherItemTwo": {
+            "index": 2,
+            "name": "Other Item Two",
+            "href": "#"
+        },
+        "otherItemThree": {
+            "index": 3,
+            "name": "Other Item Three",
+            "href": "#"
+        },
+        "yetAnotherItemOne": {
+            "index": 1,
+            "name": "Yet Another Item One",
+            "href": "#"
+        },
+        "yetAnotherItemTwo": {
+            "index": 2,
+            "name": "Yet Another Item Two",
+            "href": "#"
+        },
+        "yetAnotherItemThree": {
+            "index": 3,
+            "name": "Yet Another Item Three",
+            "href": "#"
+        },
+        "yetAnotherItemFour": {
+            "index": 4,
+            "name": "Yet Another Item Four",
+            "href": "#"
+        }
+    }
+}
