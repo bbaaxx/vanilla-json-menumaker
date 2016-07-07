@@ -1,0 +1,59 @@
+{
+    "menus": {
+        "primaryNav": [{
+            "id": "itemOne",
+            "index": 1
+        }, {
+            "id": "itemTwo",
+            "index": 2
+        }, {
+            "id": "itemThree",
+            "index": 3
+        }],
+        "subnavOne": [{
+            "id": "otherItemOne",
+            "index": 1
+        }, {
+            "id": "otherItemTwo",
+            "index": 2
+        }],
+        "subnavTwo": [{
+            "id": "yetAnotherItemOne",
+            "index": 1
+        }]
+    },
+    "menuItemDefinitions": {
+        "itemOne": {
+            "index": 1,
+            "name": "Item One",
+            "href": "/itemOne",
+            "subNav": "subnavOne"
+        },
+        "itemTwo": {
+            "index": 2,
+            "name": "Item Two",
+            "href": "/itemTwo",
+            "subNav": "subnavTwo"
+        },
+        "itemThree": {
+            "index": 3,
+            "name": "Item Three",
+            "href": "/itemThree"
+        },
+        "otherItemOne": {
+            "index": 1,
+            "name": "Other Item One",
+            "href": "#"
+        },
+        "otherItemTwo": {
+            "index": 2,
+            "name": "Other Item Two",
+            "href": "#"
+        }
+        "yetAnotherItemOne": {
+            "index": 1,
+            "name": "Yet Another Item One",
+            "href": "#"
+        }
+    }
+}
