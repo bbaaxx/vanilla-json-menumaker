@@ -8,7 +8,8 @@
     "dev": "tsc -p . && lite-server",
     "typescript": "tsc -p .",
     "build": "browserify --debug -e js/index.js -o dist/menumaker-json.js",
-    "minify": "uglifyjs dist/menumaker-json.js -o dist/menumaker-json.min.js"
+    "minify": "uglifyjs dist/menumaker-json.js -o dist/menumaker-json.min.js",
+    "postinstall": "typings install"
   },
   "author": "Eduardo Mosqueda (bbaaxx@gmail.com)",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "sinon-chai": "^2.8.0",
     "systemjs": "^0.19.31",
     "typescript": "^1.8.10",
+    "typings": "^1.3.1",
     "uglify-js": "^2.7.0"
   }
 }

@@ -1,4 +1,4 @@
-# A JSON-driven (mostly) VanillaJs standalone Menu Maker
+# A JSON-driven (mostly) VanillaJs standalone Menu Maker written in TypeScript
 
 This is a quick and not-so-dirty component to render a  navigation menu
 from a Json data source (currently it supports a JSON endpoint but it can
