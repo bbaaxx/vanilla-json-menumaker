@@ -10,8 +10,10 @@ export default class MenuMaker {
 
   public deployMarkup() {
     this.targetElement.innerHTML = '';
-    this.menuItems.forEach(item => {
-      this.targetElement.appendChild(item.getMarkup());
-    });
+    if (this.menuItems) {        
+      this.menuItems.forEach(item => {
+        this.targetElement.appendChild(item.getMarkup());
+      });
+    }
   }
 }

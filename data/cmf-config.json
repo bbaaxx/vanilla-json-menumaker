@@ -1,27 +1,29 @@
 {
     "menus": {
-        "primaryNav": [{
-            "id": "itemOne",
-            "index": 1
-        }, {
-            "id": "itemTwo",
-            "index": 2
-        }, {
-            "id": "itemThree",
-            "index": 3
-        }, {
-            "id": "itemFour",
-            "index": 4
-        }, {
-            "id": "itemFive",
-            "index": 5
-        }, {
-            "id": "flyout",
-            "index": 6
-        }, {
-            "id": "itemSeven",
-            "index": 7
-        }],
+        "primaryNav": [
+          {
+              "id": "itemOne",
+              "index": 1
+          }, {
+              "id": "itemTwo",
+              "index": 2
+          }, {
+              "id": "itemThree",
+              "index": 3
+          }, {
+              "id": "itemFour",
+              "index": 4
+          }, {
+              "id": "itemFive",
+              "index": 5
+          }, {
+              "id": "flyout",
+              "index": 6
+          }, {
+              "id": "itemSeven",
+              "index": 7
+          }
+        ],
         "itemOne": [{
             "id": "otherItemOne",
             "index": 1

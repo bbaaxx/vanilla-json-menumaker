@@ -1,10 +1,10 @@
-import { MenuItemDefinition }from './MenuItem';
-import MenuItem from './MenuItem';
+import { MenuItemDefinition }from '../MenuItem';
+import MenuItem from '../MenuItem';
 import HttpService from './HttpService';
 
 export default class ConfigurationService {
 
-    private cfgPromise: Q.Promise<any>
+    private cfgPromise: Q.Promise<any>;
     private itemDefinitions: MenuItemDefinition[];
 
     constructor(private sourceUrl : string) {
@@ -20,7 +20,7 @@ export default class ConfigurationService {
             if (config.menus[menuId]) {
                 menuItems = config.menus[menuId].map(value => {
                     let menuItem : MenuItem = new MenuItem(
-                      this.mergeObjects(value, this.itemDefinitions[value.id])
+                      this.mergeDefinitions(value, this.itemDefinitions[value.id])
                     );
                     return menuItem;
                 });
@@ -31,10 +31,10 @@ export default class ConfigurationService {
 
     private getConfigPromise(): Q.Promise<any> {
         let http = new HttpService();
-        return http.makeCall({ url: this.sourceUrl });
+        return http.makeCall({ url: this.sourceUrl, isJson: true });
     }
 
-    private mergeObjects(dst: any, src: any) : MenuItemDefinition {
+    private mergeDefinitions(dst: Object, src: Object) : MenuItemDefinition {
         var extended = <MenuItemDefinition>{};
         let prop;
         for (prop in dst) {
